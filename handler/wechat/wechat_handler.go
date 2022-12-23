@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/eatmoreapple/openwechat"
 	log "github.com/sirupsen/logrus"
-	"github.com/wechatgpt/wechatbot/config"
+	// "github.com/wechatgpt/wechatbot/config"
 	"github.com/wechatgpt/wechatbot/openai"
 	"github.com/wechatgpt/wechatbot/utils"
 	"strings"
