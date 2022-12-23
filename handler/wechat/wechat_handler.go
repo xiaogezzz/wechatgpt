@@ -32,7 +32,9 @@ func (gmh *GroupMessageHandler) ReplyText(msg *openwechat.Message) error {
 	group := openwechat.Group{User: sender}
 	log.Printf("Received Group %v Text Msg : %v", group.NickName, msg.Content)
 
-	wechat := config.GetWechatKeyword()
+	// wechat := config.GetWechatKeyword()
+	str := "@scv"
+	wechat := &str
 	requestText := msg.Content
 	if wechat != nil {
 		content, key := utils.ContainsI(requestText, *wechat)
